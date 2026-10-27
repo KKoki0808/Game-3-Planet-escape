@@ -1,6 +1,8 @@
 # Publication status — documentation only
 
 Status date: 2026-10-27.
+
+**Publication pending Git authentication.** A normal Push was attempted from the separate documentation-only repository but credential retrieval failed. No successful Push or public document-page verification is claimed. Browser login alone did not supply Git credentials. The complete documentation commit is ready for retry after authentication.
 Repository: https://github.com/KKoki0808/Game-3-Planet-escape
 
 ## Scope
