@@ -4,7 +4,7 @@ This log preserves **Planet Escape development history**, followed by asset-gene
 
 Japanese user prompts are presented in **English translation**, labelled accordingly. Original English prompts are retained. Original asset filenames are identifiers and are not translated. Retrospective summaries and reconstructed generation text are explicitly labelled; missing prompts are not invented.
 
-Current game specifications: [README](README.md). Detailed implementation evidence: [Planet Escape development record](Assets/PlanetEscape/DEVELOPMENT_LOG.md). Provenance and rights: [ASSET_CREDITS](ASSET_CREDITS.md) and [ASSET_LICENSE_INVENTORY.csv](ASSET_LICENSE_INVENTORY.csv). Only documentation is published; Unity source, game media and the Windows build remain outside this repository.
+Current game specifications: [README](README.md). Detailed implementation evidence: [Planet Escape development record](Assets/PlanetEscape/DEVELOPMENT_LOG.md). Provenance and rights: [ASSET_CREDITS](ASSET_CREDITS.md) and [ASSET_LICENSE_INVENTORY.csv](ASSET_LICENSE_INVENTORY.csv). The compiled browser game is published separately on GitHub Pages under the author’s Web-only approval. This main branch contains documentation; full Unity source, standalone game media and the Windows build remain unpublished.
 
 ## Contents
 
@@ -59,6 +59,7 @@ The initial entries below are sourced from the already recorded Planet Escape de
 - 2026-10-27 — user-supplied Tripo references and ElevenLabs prompt summaries
 - 2026-10-27 — retain all Planet Escape history and translate Japanese prompts
 - 2026-10-27 — portfolio README rewrite from the author’s supplied outline
+- 2026-10-27 — browser build and Web-only publication approval
 
 ## 2026-10-24 — Planet Escape foundation as a separate game
 
@@ -270,6 +271,14 @@ User clarified that Planet Escape development records must remain and that Japan
 ## 2026-10-27 — portfolio README rewrite from the author’s supplied outline
 
 User requested rewriting README using the attached Planet Escape portfolio outline. Reorganized the publication copy into an English game overview, three-area descriptions, gameplay/reward-damage-ending explanation, controls/retry behavior, AI collaboration and human creative decisions, build instructions, project details, documentation links and credits. Preserved the confirmed Navigation Chip / Rocket Engine / Power Core assignments and explicit documentation-only status. Retained ElevenLabs (11.ai) in the public title, added Free-plan credits, distinguished prior automated checks from unverified manual playthrough/performance, and avoided claiming any public playable or full-source download. Described reward/damage/end as the game’s structure without treating an unverified grading requirement in the supplied draft as an independently confirmed course rule. No code, scene, game media, original Unity history or Windows build changed.
+
+## 2026-10-27 — browser build and Web-only publication approval
+
+**User request (English translation):** “I want other people to be able to play the browser version.” The user completed installation of Web Build Support after the initial Windows elevation prompt failed. The user later explicitly approved: “Authorize public release of the Web version only” (English translation), with unresolved media distribution conditions retained in the record and no permission inferred for standalone assets, full Unity source or the Windows build.
+
+Built the saved PlanetEscape scene in the existing disposable validation project using Unity 6000.3.27f1 Web support. Only that copy received build settings/helper changes: Gzip plus decompression fallback, 256 MiB initial/2048 MiB maximum memory, no WebAssembly threads, and the existing game unchanged. Build succeeded with zero errors and zero warnings. Generated output was about 60 MB; only the HTML wrapper/credit and responsive page sizing were adjusted afterward. A local HTTP preview confirmed start, forward movement, arrow camera orbit, double jump and visible exhaust; its browser error/warning check was empty. No full browser mission playthrough, shooting/egg-unlock test, auditory review, FPS benchmark or other-device test is claimed.
+
+Published only the compiled player and generated page resources to a separate gh-pages history, enabled GitHub Pages with HTTPS and prepared a README Play link, Web manifest and current scope/rights notes. Scanned decompressed deployment payloads for common credential/private-home-path patterns without matches. Original Assets/Packages/ProjectSettings and the existing Windows build/ZIP matched the 1,286-file baseline. Provider rights questions are not marked resolved; the Web-only publication proceeded on the author’s explicit approval. Public deployment completed on GitHub Pages. Opened the HTTPS play URL in the browser, started the expedition and verified movement, arrow-key camera rotation and double jump/exhaust again. Browser error/warning log was empty for this check. Downloaded all 17 runtime files from the public site and verified exact SHA256 matches; the non-runtime .nojekyll marker is separate. Public play URL: https://kkoki0808.github.io/Game-3-Planet-escape/.
 
 ## Tripo and ElevenLabs asset-generation prompts
 

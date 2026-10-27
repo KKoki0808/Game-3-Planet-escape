@@ -1,28 +1,36 @@
-# Publication status — documentation only
+# Publication status — playable Web build and documentation
 
 Status date: 2026-10-27.
 
-**Documentation published successfully.** Git authentication is now usable. The documentation-only main branch was pushed normally to the repository below. README and PROMPT_LOG rendered successfully in a browser after the Push. No game asset or Windows build was uploaded.
+**Play:** https://kkoki0808.github.io/Game-3-Planet-escape/
+
 Repository: https://github.com/KKoki0808/Game-3-Planet-escape
 
-## Scope
+## Authorized scope
 
-This publication contains documentation, development records, rights inventories and retained third-party legal notices only. No Unity source project, gameplay assets, GLB/FBX models, textures, MP3 files or Windows game package is included. It is not playable or fully reconstructible in Unity.
+The author explicitly approved **Web publication only**, superseding the earlier no-uncleared-media publication restriction for this compiled Web build. The author did not claim that provider permission questions had been resolved. Asset rights reviews therefore remain conditional and are not changed to “cleared.”
 
-An independent documentation-only Git history is used. The original local Unity project, its original Git history and completed Windows build are preserved separately. Paths and hashes in inventories identify held files; they do not embed those files. No game Release is created.
+- `main`: documentation, prompt/development logs, credits, rights inventories and legal notices.
+- `gh-pages`: compiled Web game and generated page resources, served by GitHub Pages.
+- Not published: full Unity source, original GLB/FBX/MP3 assets, reference images, Windows EXE/ZIP.
 
-## Remaining submission items
+The Web player embeds game meshes, textures, audio and compiled code as a playable production. It is not an asset pack, and embedded media is not claimed to be impossible to extract. The reference photograph remains absent from runtime use. Original local Unity files/history and Windows build are preserved separately; no force push or history rewrite is used.
 
-| Item | Current state / condition |
+## Build and verification
+
+Unity 6000.3.27f1 Web build: succeeded, zero errors and zero warnings, PlanetEscape scene only. Web compression uses Gzip with decompression fallback; the Web player uses no WebAssembly threads. The page includes the ElevenLabs (11.ai) title credit and responsive sizing. See WEB_BUILD_MANIFEST.csv for deployed file hashes.
+
+Browser checks on this PC confirmed loading, the start screen, beginning play, forward movement, arrow-key camera orbit and double jump with visible jet exhaust; no browser warning/error was captured in that local check. A complete mission playthrough, browser shooting/egg unlock/reward completion, audio listening/balance, FPS benchmark and other devices remain unverified. The public HTTPS URL was also opened and those same initial controls were checked again. All 17 public runtime files matched deployment SHA256 values. No public-browser error/warning was captured in that check. The latest prompt-log entry records the actual publication result.
+
+## Remaining items
+
+| Item | Status |
 | --- | --- |
-| README, PROMPT_LOG, asset credits and rights review | Published; README and PROMPT_LOG browser rendering confirmed |
-| Complete Unity source | Not distributed; Free Tripo original/derived media redistribution scope remains unresolved and raw ElevenLabs audio has separate restrictions |
-| Windows playable download | Not distributed; Tripo Free embedded-game scope, ElevenLabs attribution placement and sky reference-input rights basis remain pending |
-| ElevenLabs raw MP3s | Not published; no written exception for isolated audio sharing recorded |
-| Reference photograph | Not published; not a runtime asset; source/input permission not recorded |
-| Provider replies | Inquiry drafts only; no support message sent or reply claimed |
-| Manual Windows playthrough | Prior startup/build checks exist; no completed manual standalone playthrough is claimed |
+| Browser play | Web build authorized for publication; link above |
+| Full Unity source | Not distributed; original/derived model redistribution and raw audio restrictions remain |
+| Windows download | Not uploaded; not included in the Web-only approval |
+| Provider licenses / sky reference-input rights | Recorded questions remain unresolved; author publication approval is separate from rights clearance |
+| Provider replies | Inquiry drafts only; none invented |
+| Full manual playthrough | Still to be completed |
 
-The user confirmed self-generation and generation-time Free plans for Tripo/ElevenLabs, and a noncommercial university assignment. These confirmations resolve origin/plan questions, not every redistribution condition. See ASSET_RIGHTS_REVIEW.md and ASSET_LICENSE_INVENTORY.csv for separate use cases. PUBLICATION_FILE_DECISIONS.csv conservatively lists original/adjacent derived files and the held build at file level.
-
-Earlier logs and preparation plans are chronological records. Their statements that nothing had yet been published describe the time of those checks. This file and the latest PROMPT_LOG entry govern the current documentation-only publication scope. Historical instructions to withhold publication refer to uncleared game/media, not a new permission to publish them.
+Prior preparation documents and chronological entries describe the state when written. This status file and the latest prompt-log entry describe the current publication scope. Free-plan self-generation and noncommercial university purpose remain user-confirmed facts.

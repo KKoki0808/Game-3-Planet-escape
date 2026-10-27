@@ -3,7 +3,13 @@
 
 **Developed with Unity 6.3 LTS, OpenAI Codex, Tripo, and ElevenLabs**
 
-> **Current public scope: documentation only.** The Unity source project and Windows build are not publicly distributed while their asset distribution conditions are being confirmed. This repository is not a playable download or a complete, rebuildable Unity project.
+## Play in Your Browser
+
+### [▶ PLAY PLANET ESCAPE](https://kkoki0808.github.io/Game-3-Planet-escape/)
+
+No download or Unity Editor is required. Use a **desktop browser with a keyboard**. The first load downloads about **60 MB**; wait for the start screen, click **BEGIN EXPEDITION**, and use the controls below. Touch controls and mobile play have not been implemented or tested.
+
+> **Publication scope:** The playable Web build is served from `gh-pages`. The `main` branch contains documentation. The full Unity project, original model/audio files and Windows build are not distributed. The author explicitly authorized publication of the Web build; unresolved asset distribution conditions are still documented and are not represented as cleared.
 
 [Development & AI Prompt Log](PROMPT_LOG.md) · [Asset Credits](ASSET_CREDITS.md) · [Publication Status](PUBLICATION_STATUS.md)
 
@@ -130,9 +136,9 @@ For a detailed chronological record, see [PROMPT_LOG.md](PROMPT_LOG.md).
 
 ## Windows Build and How to Play
 
-**Build status:** The Windows 64-bit version has been built successfully, with zero build errors and zero warnings.
+**Windows build status:** The Windows 64-bit version was built successfully, with zero build errors and zero warnings. The existing Windows build has not been changed by the Web conversion.
 
-**Distribution status:** The executable is currently not publicly available while the asset distribution conditions are being reviewed.
+**Windows distribution status:** The Windows executable is not publicly available while its distribution conditions are reviewed. Use the browser version linked above to play now.
 
 When an authorized release becomes available:
 
@@ -143,14 +149,14 @@ When an authorized release becomes available:
 
 Unity Editor is not required to play the Windows build.
 
-The existing build passed automated build and startup checks. A complete manual standalone playthrough, audio balance review, and performance benchmark have not been documented. No new game test is claimed by this README update.
+The Windows build passed prior automated build and startup checks. The Web build also completed with zero build errors and zero warnings. Initial browser checks cover loading, starting the expedition, forward movement, arrow-key camera orbit and double jumping with visible jet exhaust. A full mission playthrough, shooting/reward completion in the browser, auditory balance, FPS benchmarking and other browser/device combinations remain unverified.
 
 ## Unity Project
 
 - **Engine:** Unity 6.3 LTS (6000.3.27f1)
 - **Rendering:** Universal Render Pipeline (URP)
 - **Language:** C#
-- **Platform:** Windows 64-bit
+- **Platforms:** Web (Unity WebGL) and a separately built Windows 64-bit version
 - **Project type:** Third-person 3D adventure
 
 The complete Unity source project is currently not distributed in this public repository because asset redistribution permissions remain under review.
@@ -184,19 +190,18 @@ These records document the production workflow, AI tools, asset origins, technic
 
 **Sky and visual reference generation:** OpenAI image-generation tools
 
-This project was created for a noncommercial university assignment. The intended Windows Release title is **Planet Escape — SFX by ElevenLabs (11.ai) — Windows64**. This README includes an explicit sound-effects credit; whether external title placement alone satisfies attribution for the unchanged game binary remains part of the distribution review.
+This project was created for a noncommercial university assignment. The Web page title includes **ElevenLabs (11.ai)**. The author explicitly authorized Web publication while the documented asset distribution conditions remain unresolved; this authorization is not a provider license confirmation. Windows/source/standalone-media distribution remains outside that approval.
 
 Third-party and AI-generated asset distribution rights are addressed individually in the asset documentation. Public documentation does not grant permission to redistribute the underlying models, textures, or audio.
 
 ## Current Publication Status
 
-This GitHub repository currently contains **documentation only**.
+- **Playable browser build:** [Open Planet Escape](https://kkoki0808.github.io/Game-3-Planet-escape/).
+- **Documentation:** Available on this repository's `main` branch, including the full recorded Planet Escape development history and asset-generation prompt records.
+- **Unity source / Windows build / standalone models and audio:** Not publicly distributed.
+- **Rights review:** Still records unresolved conditions. The author authorized the Web build specifically; no blanket asset license is granted.
 
-The Unity source project and Windows executable have not been publicly distributed because their asset distribution conditions are still being reviewed.
-
-The local Windows build is complete, but the public Release is not yet available. This repository is not currently a playable download or a complete, rebuildable Unity project.
-
-The original Unity project, existing Git history, and local Windows build are preserved separately. This public repository uses an independent documentation-only history; model, image, audio, and build files are not hidden in its earlier commits. [PUBLICATION_ALLOWLIST.csv](PUBLICATION_ALLOWLIST.csv) lists the published documents and their checksums.
+The original Unity project, its existing Git history and Windows build are preserved separately. `main` uses an independent documentation history; `gh-pages` contains only the compiled Web player and its generated page resources. [PUBLICATION_ALLOWLIST.csv](PUBLICATION_ALLOWLIST.csv) lists the documentation checksums; [WEB_BUILD_MANIFEST.csv](WEB_BUILD_MANIFEST.csv) lists the Web deployment files.
 
 See [Publication Status](PUBLICATION_STATUS.md) for details.
 

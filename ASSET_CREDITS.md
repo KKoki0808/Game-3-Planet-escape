@@ -1,4 +1,4 @@
-> Publication scope update (2026-10-27): This file is part of a documentation-only publication. References below to pending publication concern the full Unity project, media and Windows game, or earlier preparation steps. See [PUBLICATION_STATUS.md](PUBLICATION_STATUS.md) for current scope. No underlying media is included.
+> Current publication scope (2026-10-27): The author has explicitly authorized the compiled Web game on [GitHub Pages](https://kkoki0808.github.io/Game-3-Planet-escape/). This approval does not resolve the provider rights questions below. `main` remains documentation; the compiled game is on `gh-pages`. Full Unity source, Windows build and original standalone media remain unpublished. See [PUBLICATION_STATUS.md](PUBLICATION_STATUS.md).
 
 # Asset credits and current rights review
 
