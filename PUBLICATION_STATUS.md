@@ -2,7 +2,7 @@
 
 Status date: 2026-10-27.
 
-**Publication pending Git authentication.** A normal Push was attempted from the separate documentation-only repository but credential retrieval failed. No successful Push or public document-page verification is claimed. Browser login alone did not supply Git credentials. The complete documentation commit is ready for retry after authentication.
+**Documentation published successfully.** Git authentication is now usable. The documentation-only main branch was pushed normally to the repository below. README and PROMPT_LOG rendered successfully in a browser after the Push. No game asset or Windows build was uploaded.
 Repository: https://github.com/KKoki0808/Game-3-Planet-escape
 
 ## Scope
@@ -15,7 +15,7 @@ An independent documentation-only Git history is used. The original local Unity 
 
 | Item | Current state / condition |
 | --- | --- |
-| README, PROMPT_LOG, asset credits and rights review | Documentation prepared for this publication; verify public rendering after Push |
+| README, PROMPT_LOG, asset credits and rights review | Published; README and PROMPT_LOG browser rendering confirmed |
 | Complete Unity source | Not distributed; Free Tripo original/derived media redistribution scope remains unresolved and raw ElevenLabs audio has separate restrictions |
 | Windows playable download | Not distributed; Tripo Free embedded-game scope, ElevenLabs attribution placement and sky reference-input rights basis remain pending |
 | ElevenLabs raw MP3s | Not published; no written exception for isolated audio sharing recorded |
