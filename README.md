@@ -1,83 +1,207 @@
-# Planet Escape — SFX by ElevenLabs (11.ai)
+# PLANET ESCAPE — SFX by ElevenLabs (11.ai)
+### A 3D Sci-Fi Survival Adventure | AME 294 — Portfolio Game 3
 
-**Documentation-only repository. The Unity source project and Windows executable are not distributed here while their asset distribution conditions are being confirmed.** This repository contains the development log, credits, rights review and submission documents. It is not a rebuildable Unity project or a playable download.
+**Developed with Unity 6.3 LTS, OpenAI Codex, Tripo, and ElevenLabs**
 
-AME 294 — Portfolio Game 3. A third-person 3D survival game built with **Unity 6.3 LTS (6000.3.27f1)**.
+> **Current public scope: documentation only.** The Unity source project and Windows build are not publicly distributed while their asset distribution conditions are being confirmed. This repository is not a playable download or a complete, rebuildable Unity project.
 
-Your spacecraft has crashed. Recover three repair parts from three areas, return to the ship, repair it, and escape.
+[Development & AI Prompt Log](PROMPT_LOG.md) · [Asset Credits](ASSET_CREDITS.md) · [Publication Status](PUBLICATION_STATUS.md)
 
-| Area | Challenge | Repair part |
-| --- | --- | --- |
-| Rocky Canyon | Jump across graded rock platforms; use the midpoint checkpoint | Navigation Chip |
-| Drone Base | Use cover and patrol gaps to avoid four drones and seven cameras | Rocket Engine |
-| Alien Nest | Take the rifle and destroy all four egg nests to unlock the reward | Power Core |
+## About the Game
 
-## Windows download
+*Your spaceship has crashed on an unknown planet. Explore, survive, repair, and escape.*
 
-A Windows64 build is complete locally as `PlanetEscape_Windows64.zip` (78,562,854 bytes, approximately 79 MB).
-**It has not been uploaded.** Unity source and Windows build distribution are pending the conditions in [PUBLICATION_STATUS.md](PUBLICATION_STATUS.md). Only documentation is being published; no raw model, texture or audio assets are included.
+**Planet Escape** is a third-person 3D adventure game combining platforming, stealth, and combat in a small, interconnected world.
 
-[GitHub Releases — download will appear here after publication](https://github.com/KKoki0808/Game-3-Planet-escape/releases)
+Players explore three distinct areas to recover three missing spaceship components. Each area introduces a different challenge, requiring different strategies and skills.
 
-Once available, extract the entire ZIP and run `PlanetEscape_Build/PlanetEscape.exe`. Unity Editor is not required. Keep the EXE, data folder, DLLs, MonoBleedingEdge and D3D12 files together. Alt+F4 closes the game.
+Once all three repair parts have been collected, the player must return to the crashed spaceship, repair it, and escape the planet.
 
-## Open the full Unity project (when access is permitted)
+**Objective:** Collect all 3 repair parts, survive the planet's dangers, and launch your spaceship.
 
-A documentation-only publication does **not** contain a rebuildable Unity project. The following instructions apply only to the complete local project or a future authorized full-source release.
+## Explore Three Unique Areas
 
-1. Install Unity 6000.3.27f1 through Unity Hub; add Windows Build Support to rebuild the Windows player.
-2. Obtain the authorized full project. If supplied through Git, use Git LFS and `git lfs pull` for its six large source GLBs.
-3. Open the repository folder in Unity Hub. Let Unity restore the pinned packages and import Assets.
-4. Open `Assets/PlanetEscape/Scenes/PlanetEscape.unity`, press Play, and select **BEGIN EXPEDITION** or press Enter.
+### 1. Rocky Canyon — Platforming Challenge
 
-The existing scene is configured. Scene-generation menus are unnecessary for normal play. The original private Unity project keeps Assets and their.meta files, Packages/manifest.json and packages-lock.json, and ProjectSettings; Library/Temp/Logs/builds are regenerated or distributed separately. The original SpaceSalvageRun and SampleScene files remain available, disabled in the submission build list.
+Navigate a rocky canyon filled with elevated platforms, narrow landing areas, and dangerous gaps.
+
+- Jump across rocks using normal and double jumps.
+- Overcome increasingly challenging platforming sections.
+- Use the checkpoint to recover from failed jumps.
+- Collect the **Navigation Chip**.
+
+**Core skill:** Movement and precision.
+
+### 2. Drone Base — Stealth Challenge
+
+Infiltrate a futuristic security base guarded by four patrol drones and seven surveillance cameras.
+
+- Observe enemy patrol patterns.
+- Hide behind cargo containers, trucks, and defensive walls.
+- Avoid the visible surveillance fields; detection causes health loss.
+- Reach the secured area and recover the **Rocket Engine**.
+
+**Core skill:** Observation and strategy.
+
+### 3. Alien Nest — Combat Challenge
+
+Explore an underground alien nest infested with hostile spider-like creatures.
+
+- Find and equip a futuristic rifle.
+- Fight aggressive alien spiders.
+- Destroy four egg nests to unlock the final repair component.
+- Recover the **Power Core**.
+
+**Core skill:** Aiming, combat, and survival.
+
+## Gameplay Features
+
+- Third-person exploration with freely controlled camera movement
+- Running, jumping, and jet-assisted double jumping
+- Three distinct gameplay styles: platforming, stealth, and shooting
+- Health and damage mechanics
+- Repair-part collection and progress tracking
+- Checkpoints and retry options
+- Sound effects created with ElevenLabs
+- A spaceship repair and takeoff sequence
+- Win and Game Over screens with restart functionality
+
+### Reward, Damage, End
+
+The game combines rewards, damage, and a clear ending:
+
+| Element | Implementation |
+|---|---|
+| **Reward** | Collect three repair parts and restore health |
+| **Damage** | Canyon falls, drone/camera detection, and contact with alien enemies |
+| **End** | Repair the spacecraft and escape to win, or lose all health to reach Game Over |
+
+Players can retry after failure or restart the expedition.
 
 ## Controls
 
-| Input | Action |
-| --- | --- |
-| WASD | Move relative to the camera |
+| Key | Action |
+|---|---|
+| W / A / S / D | Move |
 | Shift | Run |
-| Space | Jump; press again in the air for a backpack jet jump |
-| Arrow keys / right mouse drag | Orbit the camera |
-| E | Take the rifle at the nest entrance; repair/launch beside the ship after collecting all three parts |
-| F / left mouse button | Fire while armed inside Alien Nest |
-| Enter | Begin; retry on Game Over; restart after success |
-| R | Reset all progress on Game Over; restart after success |
+| Space | Jump / Double Jump |
+| Arrow keys or Right Mouse Drag | Rotate camera |
+| E | Pick up rifle / Repair and launch spaceship after collecting all three parts |
+| F or Left Mouse Button | Shoot in Alien Nest |
+| Enter | Begin / Retry / Restart |
+| R | Reset progress from Game Over / Restart after success |
+| Alt + F4 | Exit the Windows game |
 
-Canyon falls, detection and alien attacks cost health. A repair-part pickup restores health and counts only once. At zero health, **Retry — Keep Parts** returns to the ship with full health and retains recovered parts during the current run. **Reset All Progress** starts a fresh expedition. Closing the application ends the session; there is no disk save.
+Movement is relative to the camera direction. Keyboard-based camera controls are supported. Press Space once to jump, release it, then press again for the backpack jet jump.
 
-After repair, the ship levels, returns to its original clean material, plays its startup cue, then lifts off. The escape sound stops on success. The HUD shows hearts, repair progress and colored entrance trails: yellow Canyon, blue Drone Base, purple Alien Nest.
+Each repair part can be collected only once, and picking one up restores health. At Game Over, **Retry — Keep Parts** returns the player to the ship with recovered parts retained for the current run. **Reset All Progress** starts a fresh expedition. Progress is not saved after closing the application.
 
-## Build and verification
+## Built with Artificial Intelligence
 
-The existing Windows release build succeeded with 0 errors and 0 warnings and includes PlanetEscape alone at Build Index 0. All 177 distribution files were checked against the ZIP. Headless and normal Intel Iris Xe/Direct3D11 startup checks completed initialization without exceptions. **A manual standalone playthrough, visual review, audio balance and FPS benchmark have not been completed.**
+Planet Escape was developed using AI throughout the game development process.
 
-No gameplay or build binary was changed for repository preparation. One-off local source-import Python utilities and the unlicensed reference photograph stay on the author's machine and are not required to open or rebuild the checked-in native Unity scene.
+**OpenAI Codex — Programming and Unity Development**
 
-## Development and asset records
+Codex assisted with C# programming, level construction, gameplay mechanics, debugging, camera controls, enemy behavior, UI, and build preparation.
 
-- [Chronological prompt and development record](PROMPT_LOG.md)
-- [Detailed implementation log](Assets/PlanetEscape/DEVELOPMENT_LOG.md)
-- [Asset credits and unresolved permissions](ASSET_CREDITS.md)
-- [Per-use rights review and submission options (Japanese)](ASSET_RIGHTS_REVIEW.md)
-- [Machine-readable asset inventory](ASSET_LICENSE_INVENTORY.csv)
-- [Unity package notices](THIRD_PARTY_NOTICES.md)
-- [Publication status and remaining actions](PUBLICATION_STATUS.md)
+**Tripo — 3D Asset Creation**
 
-This is not a blanket open-source license for the models, textures or audio. Asset-specific rights must be confirmed before redistribution.
+Tripo was used to generate 3D content for the game, including environmental objects and game assets. Generated content was imported into Unity.
 
-## Asset attribution and publication scope
+**ElevenLabs — Sound Design**
 
-Sound effects were generated by the project author using **ElevenLabs (11.ai)** on the Free plan. This is a **noncommercial university assignment**. Models were generated by the author using Tripo on its Free plan. The sky was generated with the OpenAI image tool; the reference photograph is separate and is not distributed. Provider credits do not grant recipients a blanket license to extract or redistribute the media.
+ElevenLabs was used to produce sound effects for spaceship systems, item collection, jet-assisted jumping, enemy behavior, and combat.
 
-The intended public Release title is **Planet Escape — SFX by ElevenLabs (11.ai) — Windows64**. The title and this README supply an explicit attribution proposal; whether external title placement alone suffices for the unchanged game binary remains to be confirmed. No raw MP3 download is offered. This documentation does not claim that a public game Release already exists.
+**OpenAI Image Generation — Visual References**
 
-- [Shortest submission route and publication file decisions](SUBMISSION_PUBLICATION_PLAN.md)
-- [Unsent provider inquiry drafts](LICENSE_INQUIRIES.md)
-- [Conditional Windows Release draft](RELEASE_DRAFT.md)
-- [File-level held media and derivatives](PUBLICATION_FILE_DECISIONS.csv)
+OpenAI image generation was used for the Milky Way sky and selected visual references, including the egg reference reported by the author. Supplied reference images are not included in this documentation repository. The prompt log distinguishes recorded prompts, retrospective summaries, translations, and reconstructed text.
 
-## This public repository
+### Human First → AI in the Middle → Human Last
 
-Only text documentation and retained third-party license notices are included. The original Unity project and its existing Git history are preserved separately. This repository starts from an independent documentation-only history and includes no historical model or audio blobs. See PUBLICATION_ALLOWLIST.csv for the published file list and checksums. Draft inquiries and Release text are labelled as drafts; no provider reply or game Release is claimed.
+**Human First:** I developed the concept, selected the three gameplay styles, designed the challenges, and determined how the player would progress.
+
+**AI in the Middle:** AI tools helped generate code, 3D content, sound effects, and implementation solutions.
+
+**Human Last:** I evaluated the results, identified gameplay and visual problems, requested improvements, and made the final creative decisions.
+
+The development process included multiple iterations, such as balancing Rocky Canyon's difficulty, restructuring Alien Nest as an underground area, and improving third-person aiming.
+
+For a detailed chronological record, see [PROMPT_LOG.md](PROMPT_LOG.md).
+
+## Windows Build and How to Play
+
+**Build status:** The Windows 64-bit version has been built successfully, with zero build errors and zero warnings.
+
+**Distribution status:** The executable is currently not publicly available while the asset distribution conditions are being reviewed.
+
+When an authorized release becomes available:
+
+1. Download the Windows ZIP from [GitHub Releases](https://github.com/KKoki0808/Game-3-Planet-escape/releases).
+2. Extract the entire ZIP file.
+3. Keep all extracted supporting files together and run `PlanetEscape_Build/PlanetEscape.exe`.
+4. Start the game and explore the planet.
+
+Unity Editor is not required to play the Windows build.
+
+The existing build passed automated build and startup checks. A complete manual standalone playthrough, audio balance review, and performance benchmark have not been documented. No new game test is claimed by this README update.
+
+## Unity Project
+
+- **Engine:** Unity 6.3 LTS (6000.3.27f1)
+- **Rendering:** Universal Render Pipeline (URP)
+- **Language:** C#
+- **Platform:** Windows 64-bit
+- **Project type:** Third-person 3D adventure
+
+The complete Unity source project is currently not distributed in this public repository because asset redistribution permissions remain under review.
+
+If an authorized source release becomes available, the project can be opened using the corresponding Unity Editor version. Git LFS is required to retrieve large 3D source assets.
+
+## Development Documentation
+
+- [Master AI Prompt Log](PROMPT_LOG.md)
+- [Detailed Development Log](Assets/PlanetEscape/DEVELOPMENT_LOG.md)
+- [Asset Credits](ASSET_CREDITS.md)
+- [Asset Rights Review](ASSET_RIGHTS_REVIEW.md)
+- [Asset License Inventory](ASSET_LICENSE_INVENTORY.csv)
+- [Publication Status](PUBLICATION_STATUS.md)
+- [File-by-File Publication Decisions](PUBLICATION_FILE_DECISIONS.csv)
+- [Submission Plan](SUBMISSION_PUBLICATION_PLAN.md)
+- [Provider Inquiry Drafts — Not Sent](LICENSE_INQUIRIES.md)
+- [Third-Party Notices](THIRD_PARTY_NOTICES.md)
+
+These records document the production workflow, AI tools, asset origins, technical decisions, and unresolved distribution questions.
+
+## Credits and Attribution
+
+**Game concept, creative direction, and development supervision:** Project author
+
+**Programming assistance:** OpenAI Codex
+
+**3D generation:** Tripo — generated by the project author using the Free plan
+
+**Sound effects:** ElevenLabs (11.ai) — generated by the project author using the Free plan
+
+**Sky and visual reference generation:** OpenAI image-generation tools
+
+This project was created for a noncommercial university assignment. The intended Windows Release title is **Planet Escape — SFX by ElevenLabs (11.ai) — Windows64**. This README includes an explicit sound-effects credit; whether external title placement alone satisfies attribution for the unchanged game binary remains part of the distribution review.
+
+Third-party and AI-generated asset distribution rights are addressed individually in the asset documentation. Public documentation does not grant permission to redistribute the underlying models, textures, or audio.
+
+## Current Publication Status
+
+This GitHub repository currently contains **documentation only**.
+
+The Unity source project and Windows executable have not been publicly distributed because their asset distribution conditions are still being reviewed.
+
+The local Windows build is complete, but the public Release is not yet available. This repository is not currently a playable download or a complete, rebuildable Unity project.
+
+The original Unity project, existing Git history, and local Windows build are preserved separately. This public repository uses an independent documentation-only history; model, image, audio, and build files are not hidden in its earlier commits. [PUBLICATION_ALLOWLIST.csv](PUBLICATION_ALLOWLIST.csv) lists the published documents and their checksums.
+
+See [Publication Status](PUBLICATION_STATUS.md) for details.
+
+---
+
+**Arizona State University | AME 294: Games and AI | Portfolio Game 3**
+
+*Explore. Survive. Repair. Escape.*

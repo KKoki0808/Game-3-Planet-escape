@@ -58,6 +58,7 @@ The initial entries below are sourced from the already recorded Planet Escape de
 - 2026-10-27 — Planet Escape-only log and generation-prompt inventory
 - 2026-10-27 — user-supplied Tripo references and ElevenLabs prompt summaries
 - 2026-10-27 — retain all Planet Escape history and translate Japanese prompts
+- 2026-10-27 — portfolio README rewrite from the author’s supplied outline
 
 ## 2026-10-24 — Planet Escape foundation as a separate game
 
@@ -265,6 +266,10 @@ The author supplied two Tripo reference images/instructions (research-facility w
 ## 2026-10-27 — retain all Planet Escape history and translate Japanese prompts
 
 User clarified that Planet Escape development records must remain and that Japanese prompts should be published in English. Confirmed all previously included Planet Escape dated entries remain. The earliest foundation/model/animation/sky requests were already documented separately in Assets/PlanetEscape/DEVELOPMENT_LOG.md but had not been included in the root prompt log; added sourced entries for those five stages, without inventing dates or treating the historical five-part prototype as the current three-part game. Moved the development history before asset-generation prompts and added navigation links. Translated the wall/egg instructions and Japanese quotations in the development summaries, explicitly marking translations. Preserved original media filenames as identifiers, existing English prompts and the retrospective/reconstructed provenance labels. Only the publication-copy log and checksum manifest are changed; no game source, media, build or original repository history is modified.
+
+## 2026-10-27 — portfolio README rewrite from the author’s supplied outline
+
+User requested rewriting README using the attached Planet Escape portfolio outline. Reorganized the publication copy into an English game overview, three-area descriptions, gameplay/reward-damage-ending explanation, controls/retry behavior, AI collaboration and human creative decisions, build instructions, project details, documentation links and credits. Preserved the confirmed Navigation Chip / Rocket Engine / Power Core assignments and explicit documentation-only status. Retained ElevenLabs (11.ai) in the public title, added Free-plan credits, distinguished prior automated checks from unverified manual playthrough/performance, and avoided claiming any public playable or full-source download. Described reward/damage/end as the game’s structure without treating an unverified grading requirement in the supplied draft as an independently confirmed course rule. No code, scene, game media, original Unity history or Windows build changed.
 
 ## Tripo and ElevenLabs asset-generation prompts
 
