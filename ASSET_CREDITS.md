@@ -25,3 +25,10 @@ Proposed publication credit, pending attribution placement confirmation: **Plane
 ## 2026-10-27 publication preparation update
 
 The author confirmed this is a noncommercial university assignment. Rechecked Tripo terms/pricing/help and ElevenLabs Sound Effects/publishing guidance; the distinction between Free noncommercial use, source media redistribution and embedded-game publication remains. See [the final submission plan](SUBMISSION_PUBLICATION_PLAN.md), [file-level held-file ledger](PUBLICATION_FILE_DECISIONS.csv), [unsent inquiries](LICENSE_INQUIRIES.md) and [conditional Release draft](RELEASE_DRAFT.md). README title and explicit ElevenLabs credits are now prepared; attribution placement compliance is not assumed. No asset or binary was changed or uploaded.
+
+
+## Trailer soundtrack — additional to the 31 game assets
+
+The author separately requested publication of the supplied cinematic trailer. Its music is **“The Descent” — Kevin MacLeod (incompetech.com)**, [original track / ISRC USUAN1200094](https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1200094), licensed under [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/). The official track listing was checked for that license. Changes: 45-second excerpt, loudness adjustment, fades and mixing with gameplay audio. Credit is retained in the video's final card and also displayed on the trailer page. This is an attributed third-party composition, not an ElevenLabs-generated track or a public-domain claim. It does not alter the original 31-game-asset count or clear their remaining conditions.
+
+[Watch the trailer](https://kkoki0808.github.io/Game-3-Planet-escape/trailer/) · [Music credit text](https://kkoki0808.github.io/Game-3-Planet-escape/trailer/MUSIC_CREDIT.txt). No standalone music MP3 is uploaded.

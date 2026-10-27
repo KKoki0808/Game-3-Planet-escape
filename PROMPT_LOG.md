@@ -73,6 +73,7 @@ The initial entries below are sourced from the already recorded Planet Escape de
 - 2026-10-27 — retain all Planet Escape history and translate Japanese prompts
 - 2026-10-27 — portfolio README rewrite from the author’s supplied outline
 - 2026-10-27 — browser build and Web-only publication approval
+- 2026-10-27 — cinematic trailer editing prompts and publication
 
 ## 2026-10-24 — Planet Escape foundation as a separate game
 
@@ -292,6 +293,40 @@ User requested rewriting README using the attached Planet Escape portfolio outli
 Built the saved PlanetEscape scene in the existing disposable validation project using Unity 6000.3.27f1 Web support. Only that copy received build settings/helper changes: Gzip plus decompression fallback, 256 MiB initial/2048 MiB maximum memory, no WebAssembly threads, and the existing game unchanged. Build succeeded with zero errors and zero warnings. Generated output was about 60 MB; only the HTML wrapper/credit and responsive page sizing were adjusted afterward. A local HTTP preview confirmed start, forward movement, arrow camera orbit, double jump and visible exhaust; its browser error/warning check was empty. No full browser mission playthrough, shooting/egg-unlock test, auditory review, FPS benchmark or other-device test is claimed.
 
 Published only the compiled player and generated page resources to a separate gh-pages history, enabled GitHub Pages with HTTPS and prepared a README Play link, Web manifest and current scope/rights notes. Scanned decompressed deployment payloads for common credential/private-home-path patterns without matches. Original Assets/Packages/ProjectSettings and the existing Windows build/ZIP matched the 1,286-file baseline. Provider rights questions are not marked resolved; the Web-only publication proceeded on the author’s explicit approval. Public deployment completed on GitHub Pages. Opened the HTTPS play URL in the browser, started the expedition and verified movement, arrow-key camera rotation and double jump/exhaust again. Browser error/warning log was empty for this check. Downloaded all 17 runtime files from the public site and verified exact SHA256 matches; the non-runtime .nojekyll marker is separate. Public play URL: https://kkoki0808.github.io/Game-3-Planet-escape/.
+
+## 2026-10-27 — cinematic trailer editing prompts and publication
+
+**Tool and source:** OpenAI Codex assisted with editing an author-supplied, already assembled gameplay video. The following are English translations of user requests retrieved from the actual trailer-editing conversation, not invented generation prompts. The result uses recorded game footage; it is not presented as AI-generated live-action video.
+
+### Initial trailer direction — English translation
+
+> I have already put the video clips together. Please make it work well as a trailer: start with the crash and the feeling that I need to escape, then the canyon and the need to do parkour, then Alien Nest and survival, then the drones and the need to avoid being discovered, and finally something like “Can you escape?” Make it feel good as a sequence.
+
+### Request to carry out the edit — English translation
+
+> Could you edit the video for me?
+
+### Revision request — English translation
+
+> Instead of putting the text at the bottom like subtitles, place it right in the center of the screen, using cleaner white lettering. Also add tense, royalty-free music that fits a game about having to escape from this planet.
+
+### Recorded editing brief and implementation
+
+The continuation task specified a 30–60-second English trailer, targeting 45 seconds, preserving the existing clip order and gameplay. The recorded sequence uses these captions:
+
+1. “STRANDED ON AN UNKNOWN PLANET.”
+2. “FIND THE PARTS. FIND A WAY OUT.”
+3. “EVERY JUMP COUNTS.” — Rocky Canyon.
+4. “FIGHT TO SURVIVE.” — Alien Nest.
+5. “DON’T GET CAUGHT.” — Drone Base.
+6. “CAN YOU ESCAPE?”
+7. Final card: “PLANET ESCAPE / Explore. Survive. Repair. Escape.” and the repository URL.
+
+The retained editing records show FFmpeg-based editing with Pillow title-card preparation, large centered white captions, fades, and a final title/music-credit card. Music was “The Descent” by Kevin MacLeod, used under CC BY 4.0 with attribution, not as public-domain or AI-generated music. The excerpt was edited, loudness-adjusted, faded and mixed with the gameplay audio.
+
+### Publication requested in this task
+
+The user supplied Planet_Escape_Trailer_Cinematic_45s.mp4 and requested a prominent trailer near the top of README plus the creation prompts in English in this log. Published the supplied 45-second, 1920×1080, 30 fps H.264/AAC MP4 byte-for-byte, with a poster frame extracted from its final title card, an accessible HTML video player, direct MP4 fallback, music credits and links back to the game/repository. The video was fully decoded without errors and six sampled frames were visually reviewed; this is not a claim of a new game playthrough or music listening test. No raw music MP3 or original game assets are published. Existing Web game files, the original Unity project and the Windows build are unchanged. The original 31-game-asset inventory remains separate from this additional trailer soundtrack credit. Public playback verification: the HTML player loaded, its native play control started the trailer, and the video reached its full 45-second duration with ended=true and no media error. The full public MP4 checksum matched the supplied original. This verifies delivery/playback, not a separate auditory assessment.
 
 ## Tripo and ElevenLabs asset-generation prompts
 

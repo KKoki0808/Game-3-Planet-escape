@@ -1,6 +1,16 @@
 # PLANET ESCAPE — SFX by ElevenLabs (11.ai)
 ### A 3D Sci-Fi Survival Adventure | AME 294 — Portfolio Game 3
 
+## Watch the Trailer · 45 seconds
+
+### [▶ WATCH TRAILER](https://kkoki0808.github.io/Game-3-Planet-escape/trailer/)
+
+[![Watch the Planet Escape cinematic gameplay trailer — 45 seconds](https://kkoki0808.github.io/Game-3-Planet-escape/media/trailer-poster.jpg)](https://kkoki0808.github.io/Game-3-Planet-escape/trailer/)
+
+**Click the preview to watch the trailer with video controls.** 1080p · 45 seconds · Cinematic gameplay footage.
+
+[Play the game in your browser](https://kkoki0808.github.io/Game-3-Planet-escape/) · [Open the MP4 directly](https://kkoki0808.github.io/Game-3-Planet-escape/media/Planet_Escape_Trailer_Cinematic_45s.mp4)
+
 **Developed with Unity 6.3 LTS, OpenAI Codex, Tripo, and ElevenLabs**
 
 ## Play in Your Browser
@@ -9,7 +19,7 @@
 
 No download or Unity Editor is required. Use a **desktop browser with a keyboard**. The first load downloads about **60 MB**; wait for the start screen, click **BEGIN EXPEDITION**, and use the controls below. Touch controls and mobile play have not been implemented or tested.
 
-> **Publication scope:** The playable Web build is served from `gh-pages`. The `main` branch contains documentation. The full Unity project, original model/audio files and Windows build are not distributed. The author explicitly authorized publication of the Web build; unresolved asset distribution conditions are still documented and are not represented as cleared.
+> **Publication scope:** The playable Web build and the supplied cinematic trailer are served from `gh-pages`. The `main` branch contains documentation. The full Unity project, original model/audio files and Windows build are not distributed. The author explicitly authorized publication of the Web build and separately requested publication of this trailer; unresolved asset distribution conditions are still documented and are not represented as cleared.
 
 [Development & AI Prompt Log](PROMPT_LOG.md) · [Asset Credits](ASSET_CREDITS.md) · [Publication Status](PUBLICATION_STATUS.md)
 
@@ -190,18 +200,23 @@ These records document the production workflow, AI tools, asset origins, technic
 
 **Sky and visual reference generation:** OpenAI image-generation tools
 
+**Trailer editing:** Author-supplied gameplay footage, edited with OpenAI Codex assistance. [Trailer editing prompts in English](PROMPT_LOG.md#2026-10-27--cinematic-trailer-editing-prompts-and-publication).
+
+**Trailer music:** “The Descent” — Kevin MacLeod (incompetech.com), licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). [Original track](https://incompetech.com/music/royalty-free/index.html?Search=Search&isrc=USUAN1200094). Changes: 45-second excerpt, loudness adjustment, fades, and mixing with gameplay audio. [Full music credit](https://kkoki0808.github.io/Game-3-Planet-escape/trailer/MUSIC_CREDIT.txt).
+
 This project was created for a noncommercial university assignment. The Web page title includes **ElevenLabs (11.ai)**. The author explicitly authorized Web publication while the documented asset distribution conditions remain unresolved; this authorization is not a provider license confirmation. Windows/source/standalone-media distribution remains outside that approval.
 
 Third-party and AI-generated asset distribution rights are addressed individually in the asset documentation. Public documentation does not grant permission to redistribute the underlying models, textures, or audio.
 
 ## Current Publication Status
 
+- **Cinematic trailer:** [Watch the 45-second trailer](https://kkoki0808.github.io/Game-3-Planet-escape/trailer/).
 - **Playable browser build:** [Open Planet Escape](https://kkoki0808.github.io/Game-3-Planet-escape/).
 - **Documentation:** Available on this repository's `main` branch, including the full recorded Planet Escape development history and asset-generation prompt records.
 - **Unity source / Windows build / standalone models and audio:** Not publicly distributed.
 - **Rights review:** Still records unresolved conditions. The author authorized the Web build specifically; no blanket asset license is granted.
 
-The original Unity project, its existing Git history and Windows build are preserved separately. `main` uses an independent documentation history; `gh-pages` contains only the compiled Web player and its generated page resources. [PUBLICATION_ALLOWLIST.csv](PUBLICATION_ALLOWLIST.csv) lists the documentation checksums; [WEB_BUILD_MANIFEST.csv](WEB_BUILD_MANIFEST.csv) lists the Web deployment files.
+The original Unity project, its existing Git history and Windows build are preserved separately. `main` uses an independent documentation history; `gh-pages` contains the compiled Web player, its generated page resources, and the supplied trailer with its player page and credits. [PUBLICATION_ALLOWLIST.csv](PUBLICATION_ALLOWLIST.csv) lists the documentation checksums; [WEB_BUILD_MANIFEST.csv](WEB_BUILD_MANIFEST.csv) lists the Web deployment files.
 
 See [Publication Status](PUBLICATION_STATUS.md) for details.
 
