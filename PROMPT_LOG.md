@@ -1,53 +1,176 @@
 # Planet Escape — prompt and development record
 
-This log covers **Planet Escape only**. The earlier flight-game development sections have been omitted from this published document at the author's request. Original local records are preserved separately; this is not a complete verbatim chat transcript. No missing request or generation prompt has been reconstructed.
+This log covers **Planet Escape only**. The earlier flight-game development sections have been omitted from this published document at the author's request. Original local records are preserved separately; this is not a complete verbatim chat transcript. Retrospective and reconstructed generation text is explicitly labelled; missing prompts are not invented.
 
 Current game specifications: [README](README.md). Provenance and rights: [ASSET_CREDITS](ASSET_CREDITS.md) and [ASSET_LICENSE_INVENTORY.csv](ASSET_LICENSE_INVENTORY.csv). Only documents are published; game source, media and the Windows build remain outside this repository.
 
 ## Tripo and ElevenLabs asset-generation prompts
 
-The author confirmed self-generation of the following assets using Free plans. **The exact original text entered into Tripo and ElevenLabs is not present in the available project records or supplied export metadata.** The author has been asked to supply that text. The tables identify each asset and its current prompt-record status; they do not present filenames as prompts or invent text from the finished assets.
+### How these prompt records were supplied
 
-Model names, filenames and visible results establish neither the original prompt nor whether generation used text, an image or additional settings. Partial wording in audio filenames is not treated as a complete input prompt. Generation dates, seeds and settings are not inferred. This section is an explicit record of the missing generation text and will be completed when the original entries are supplied.
+On 2026-10-27, the author supplied two Tripo reference images with Japanese instructions, an astronaut text prompt, and four pasted retrospective chat summaries about ElevenLabs. The four summaries form two exact duplicate pairs; their English prompt passages are the same and are recorded once below. They are user-supplied retrospective records, **not retrieved ElevenLabs/Tripo generation-history receipts**. This documentation update does not establish new media redistribution permissions.
 
-### Tripo — 21 model assets
+The wall and egg instructions below are reported by the author as image-guided Tripo instructions. The astronaut passage is explicitly labelled as a **reconstructed prompt supplied now**, because the author asked to record it as the way the model was made; no contemporaneous evidence establishes that it was the original input. Remaining model prompts are not invented. Prompted durations describe the requests, not measured lengths of the shipped clips. Dates, seeds and service settings are not inferred.
 
-| Asset ID | Supplied model filename | Exact original generation prompt |
+**Only prompt text and descriptions of the references are published. Neither attached image, model data nor audio is included.** The origin/permission of a reference image is not established merely by receiving it. The author describes the egg reference as ChatGPT-generated; no original image-generation prompt or service receipt for that reference was supplied.
+
+### Tripo — image-guided wall instruction
+
+**Tool:** Tripo, Free plan (author-confirmed). **Reference:** supplied image 1, a curved white/gray metallic structure with orange/gold details against a dark background. **Purpose:** match its palette for walls resembling a research facility in space. The precise model-file association is not established by the supplied message; no asset ID is assigned automatically from visual resemblance.
+
+**Author-reported instruction (Japanese, as supplied):**
+
+> 一つ目がこの画像に近いような色合いで宇宙での研究施設みたいな壁を作成してください
+
+### Tripo — alien egg reference instruction (A01)
+
+**Tool:** Tripo, Free plan (author-confirmed). **Reference:** supplied image 2, described by the author as a ChatGPT-generated egg image: translucent green egg sacs joined by dark organic webs/structures. **Purpose:** the Alien Nest egg-cluster model, associated with A01 by the author's description. The original text used to generate the reference image in ChatGPT is not recorded here.
+
+**Author-reported instruction (Japanese, as supplied):**
+
+> Chatgptで生成してもらったこの卵を作成してください
+
+### Tripo — astronaut (A05), reconstructed prompt supplied now
+
+**Tool:** Tripo. **Purpose:** the astronaut player model. **Record status:** author-supplied reconstruction on 2026-10-27; do not treat this as a verified original generation input or assign it an earlier date.
+
+> A stylized sci-fi astronaut character for a third-person action game. Full body, standing pose, clean and game-ready design. White and gray space suit with subtle blue glowing accents, a compact life-support backpack, protective helmet, reinforced boots, gloves, and a slightly futuristic but believable look. The character should look like an explorer stranded on an alien planet. Medium detail, readable silhouette, not too bulky, suitable as a player character in Unity. No weapon. Single character only. 3D game asset.
+
+### Tripo — model-by-model prompt coverage
+
+| Asset ID | Supplied model filename | Prompt record |
 | --- | --- | --- |
-| A01 | `alien+egg+cluster+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A02 | `futuristic+gun+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A03 | `spacecraft+module+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A04 | `spider+web+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A05 | `宇宙飛行士スーツ3dモデル.glb` | Not recorded — awaiting original text from author. |
-| A06 | `宇宙飞船3d模型.glb` | Not recorded — awaiting original text from author. |
-| A07 | `gpu+chip+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A08 | `岩石墙+3d+模型.glb` | Not recorded — awaiting original text from author. |
-| A09 | `岩石3d模型.glb` | Not recorded — awaiting original text from author. |
-| A10 | `surveillance+camera+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A11 | `industrial+cargo+crate+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A12 | `rocket+engine+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A13 | `futuristic+container+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A14 | `military+truck+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A15 | `shipping+container+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A16 | `mobile+laboratory+truck+3d+model.glb` | Not recorded — awaiting original text from author. |
-| A17 | `industrial+cargo+crate+3d+model (1).glb` | Not recorded — awaiting original text from author. |
-| A18 | `rock+stack+3d+model+ghibli+style.zip` | Not recorded — awaiting original text from author. |
-| A19 | `Taratect_Color.fbx.zip` | Not recorded — awaiting original text from author. |
-| A20 | `浮遊防衛ドローン3dモデル.zip` | Not recorded — awaiting original text from author. |
-| A21 | `tank+container+3d+model.zip` | Not recorded — awaiting original text from author. |
+| A01 | `alien+egg+cluster+3d+model.glb` | Author-reported image-guided egg instruction above; not a service receipt. |
+| A02 | `futuristic+gun+3d+model.glb` | Original generation prompt not recorded. |
+| A03 | `spacecraft+module+3d+model.glb` | Original generation prompt not recorded. |
+| A04 | `spider+web+3d+model.glb` | Original generation prompt not recorded. |
+| A05 | `宇宙飛行士スーツ3dモデル.glb` | Reconstructed text supplied now above; original historical input unverified. |
+| A06 | `宇宙飞船3d模型.glb` | Original generation prompt not recorded. |
+| A07 | `gpu+chip+3d+model.glb` | Original generation prompt not recorded. |
+| A08 | `岩石墙+3d+模型.glb` | Original generation prompt not recorded. |
+| A09 | `岩石3d模型.glb` | Original generation prompt not recorded. |
+| A10 | `surveillance+camera+3d+model.glb` | Original generation prompt not recorded. |
+| A11 | `industrial+cargo+crate+3d+model.glb` | Original generation prompt not recorded. |
+| A12 | `rocket+engine+3d+model.glb` | Original generation prompt not recorded. |
+| A13 | `futuristic+container+3d+model.glb` | Original generation prompt not recorded. |
+| A14 | `military+truck+3d+model.glb` | Original generation prompt not recorded. |
+| A15 | `shipping+container+3d+model.glb` | Original generation prompt not recorded. |
+| A16 | `mobile+laboratory+truck+3d+model.glb` | Original generation prompt not recorded. |
+| A17 | `industrial+cargo+crate+3d+model (1).glb` | Original generation prompt not recorded. |
+| A18 | `rock+stack+3d+model+ghibli+style.zip` | Original generation prompt not recorded. |
+| A19 | `Taratect_Color.fbx.zip` | Original generation prompt not recorded. |
+| A20 | `浮遊防衛ドローン3dモデル.zip` | Original generation prompt not recorded. |
+| A21 | `tank+container+3d+model.zip` | Original generation prompt not recorded. |
 
-### ElevenLabs — 8 sound effects
+The separate image-guided research-wall instruction is recorded above without assigning it to A08, A11 or A17: a specific file match was not supplied. This does not prevent documenting the instruction itself.
 
-| Asset ID | Sound in game | Supplied audio filename | Exact original generation prompt |
-| --- | --- | --- | --- |
-| A22 | `DroneSecurity` | `A_futuristic_securit_#2-1793063117195.mp3` | Not recorded — awaiting original text from author. |
-| A23 | `RifleSharp` | `A_very_short,_sharp__#2-1793053057518.mp3` | Not recorded — awaiting original text from author. |
-| A24 | `ShipElectrical` | `The_sound_of_electro_#2-1793057219449.mp3` | Not recorded — awaiting original text from author. |
-| A25 | `ShipStartup` | `A_futuristic_spacesh_#4-1793062733368.mp3` | Not recorded — awaiting original text from author. |
-| A26 | `SpiderAlien` | `A_terrifying_alien_s_#1-1793053087913.mp3` | Not recorded — awaiting original text from author. |
-| A27 | `JetJump` | `A_very_short,_sharp__#2-1792934648647.mp3` | Not recorded — awaiting original text from author. |
-| A28 | `PartPickup` | `A_short,_satisfying__#4-1792934973953.mp3` | Not recorded — awaiting original text from author. |
-| A29 | `ShipLaunch` | `宇宙船飛び立つ音.mp3` | Not recorded — awaiting original text from author. |
+### ElevenLabs — eight sound-effect prompt records
+
+**Tool:** ElevenLabs Sound Effects, Free plan (author-confirmed). **Evidence:** the supplied retrospective chat summaries. File associations below use the existing project inventory and the summary descriptions; an export-specific prompt match has not been independently verified. In particular, the jet summary expressly warns that the provided final revision postdates the shared MP3.
+
+#### Spaceship Takeoff (A29)
+
+**Project cue:** `ShipLaunch`. **Supplied file:** `宇宙船飛び立つ音.mp3`. **Requested duration:** 7 seconds.
+
+**Purpose:** Spacecraft escape/liftoff.
+
+**Implementation:** The existing launch cue plays during liftoff and stops on success. The summary names the supplied launch MP3.
+
+**Prompt from the supplied retrospective summary:**
+
+> Cinematic sci-fi spaceship takeoff sound effect, exactly 7 seconds long. A futuristic spacecraft engine starts with a deep mechanical hum, rapidly builds into a powerful roaring thrust, then launches with a massive burst of energy. The engine sound rises in pitch as the spaceship accelerates and flies away into the distance. Immersive, realistic, powerful bass, suitable for a 3D space exploration video game. No voices, no music.
+
+#### Double Jump Jet — later revision (A27)
+
+**Project cue:** `JetJump`. **Supplied file:** `A_very_short,_sharp__#2-1792934648647.mp3`. **Requested duration:** 0.5 seconds.
+
+**Purpose:** Backpack jet on the second jump.
+
+**Implementation:** The existing JetJumped event plays the jet cue. The summary says the shared MP3 predates this final prompt revision, so this text is not claimed to have generated the shipped clip.
+
+**Prompt from the supplied retrospective summary:**
+
+> A single, short, powerful burst of compressed gas from a futuristic astronaut jetpack. A sharp, punchy "PSHHHT!" sound with a sudden explosive rush of pressurized air, followed by a very brief mechanical hiss. Fast attack, strong initial burst, and immediate cutoff. Dry, crisp, satisfying, and energetic. No continuous engine sound, no rocket roar, no electronic beeps, no echo, no voices, no music. Duration: 0.5 seconds.
+
+#### Repair Part Collection (A28)
+
+**Project cue:** `PartPickup`. **Supplied file:** `A_short,_satisfying__#4-1792934973953.mp3`. **Requested duration:** 1 second.
+
+**Purpose:** Feedback when collecting a repair part.
+
+**Implementation:** The existing successful pickup path plays the collection cue. The summary names the supplied pickup MP3.
+
+**Prompt from the supplied retrospective summary:**
+
+> A short, satisfying futuristic video game item collection sound effect. A bright metallic "ching!" followed by a pleasant, rising two-note electronic chime, like collecting a valuable sci-fi energy component. Crisp, sparkling, clean, and rewarding. A subtle digital shimmer at the end. Duration: 1 second. No voices, no music, no background noise, no echo.
+
+#### Sci-Fi Blaster Gunshot (A23)
+
+**Project cue:** `RifleSharp`. **Supplied file:** `A_very_short,_sharp__#2-1793053057518.mp3`. **Requested duration:** 0.3 seconds.
+
+**Purpose:** Rifle shooting inside Alien Nest.
+
+**Implementation:** The existing weapon-fire path plays the rifle cue while the session is active.
+
+**Prompt from the supplied retrospective summary:**
+
+> A very short, sharp futuristic laser blaster gunshot sound effect for a sci-fi video game. A crisp, punchy "PEW!" with a powerful electronic energy discharge and a quick high-pitched zap. Fast attack, immediate cutoff, clean and satisfying. Designed for repeated shooting. No realistic gunpowder explosion, no long laser hum, no echo, no reverb, no voices, no music. Duration: 0.3 seconds.
+
+#### Alien Spider (A26)
+
+**Project cue:** `SpiderAlien`. **Supplied file:** `A_terrifying_alien_s_#1-1793053087913.mp3`. **Requested duration:** 2 seconds.
+
+**Purpose:** Spider threat/encounter feedback.
+
+**Implementation:** The existing spider voice system plays positional creature sounds with its existing cooldown; no behavior changed.
+
+**Prompt from the supplied retrospective summary:**
+
+> A terrifying alien spider creature sound effect for a sci-fi horror video game. Rapid, sharp clicking and chittering sounds, mixed with a low, raspy insect-like hiss and wet mandible movements. The creature sounds aggressive and threatening, as if it has spotted prey and is preparing to attack. Organic, creepy, and realistic. Duration: 2 seconds. No human voices, no music, no background ambience.
+
+#### Crashed Spaceship — final short wording (A24)
+
+**Project cue:** `ShipElectrical`. **Supplied file:** `The_sound_of_electro_#2-1793057219449.mp3`. **Requested duration:** No duration stated in final short prompt.
+
+**Purpose:** Damaged spacecraft electrical/alert ambience.
+
+**Implementation:** The existing proximity-based ship ambience is used near the unrepaired spacecraft.
+
+**Prompt from the supplied retrospective summary:**
+
+> The sound of electronic components and alarms coming from a crashed spaceship.
+
+**Earlier detailed version, retained as a separate iteration in the supplied summary:**
+
+> A quiet, subtle ambient sound effect of a crashed and abandoned sci-fi spaceship resting motionless on an alien planet. The engine is completely off. Occasional faint electrical crackles from damaged circuits, soft metallic creaking from the broken hull, and gentle, intermittent hissing from a small air leak. Calm, eerie, and atmospheric, creating the feeling of a spaceship that has already crashed and is no longer functioning. Very low intensity, with long quiet pauses between sounds. No engine noise, no alarms, no warning beeps, no explosions, no voices, no music. Duration: 8 seconds.
+
+The earlier request specified 8 seconds and excluded alarms; the later short wording includes alarms. These are separate versions, not simultaneous requirements.
+
+#### Repair Completed / Ship Startup (A25)
+
+**Project cue:** `ShipStartup`. **Supplied file:** `A_futuristic_spacesh_#4-1793062733368.mp3`. **Requested duration:** 3 seconds.
+
+**Purpose:** Restored spacecraft systems and pre-takeoff confirmation.
+
+**Implementation:** The supplied summary calls this Repair Completed. In the current project it is the ShipStartup cue played before liftoff, and the sequence waits for it; the summary does not prove the exact MP3-to-prompt generation match.
+
+**Prompt from the supplied retrospective summary:**
+
+> A futuristic spaceship repair completion sound effect. A damaged spacecraft's electronic systems successfully come back online, followed by a short, pleasant confirmation beep and a smooth, rising electronic chime. Clean, satisfying, and hopeful, indicating that the spaceship has been fully repaired and is ready for takeoff. Duration: 3 seconds. No voices, no music, no engine roar.
+
+#### Security Drone (A22)
+
+**Project cue:** `DroneSecurity`. **Supplied file:** `A_futuristic_securit_#2-1793063117195.mp3`. **Requested duration:** 5 seconds.
+
+**Purpose:** Drone Base patrol ambience.
+
+**Implementation:** The existing patrol drones use positional security-drone voices.
+
+**Prompt from the supplied retrospective summary:**
+
+> A futuristic security drone hovering and patrolling slowly in a sci-fi military base. A soft, continuous mechanical humming sound mixed with a subtle electric motor whir and occasional faint electronic beeps. Smooth, steady, slightly ominous, and realistic. Quiet and atmospheric, suitable for a looping background sound effect in a 3D video game. No propeller noise, no alarms, no voices, no music. Duration: 5 seconds.
+
+The eight prompt records above replace the former blanket “not recorded” placeholders for audio. They do not retroactively authenticate service receipts or resolve asset licenses. Raw MP3s remain outside this repository.
 
 ## Planet Escape development index
 
@@ -219,3 +342,8 @@ User reported GitHub authentication complete and explicitly requested pushing th
 ## 2026-10-27 — Planet Escape-only log and generation-prompt inventory
 
 User requested omitting the initial Space Salvage Run development history and explicitly recording the ElevenLabs/Tripo generation prompts. Removed the pre-Planet Escape sections and their old index from this published log, retaining the original private records and existing public commit history. Rebuilt the index around recorded Planet Escape entries. Reviewed existing text records, 17 GLB JSON metadata blocks, text/JSON records inside the supplied model archives, and ID3 metadata of all 8 MP3s. No exact Tripo/ElevenLabs prompt text was found. Added per-asset tables for all 21 models and 8 sound effects, explicitly marked as original prompt not recorded, and asked the author for the actual input text. No fabricated prompt, inferred generation method or reconstructed text is represented as history. Only the publication-copy PROMPT_LOG and checksum manifest are changed; no game asset or build is published.
+
+
+## 2026-10-27 — user-supplied Tripo references and ElevenLabs prompt summaries
+
+The author supplied two Tripo reference images/instructions (research-facility wall palette and ChatGPT-generated egg), an astronaut prompt to record retrospectively, and four pasted ElevenLabs summaries. Read all four; they form two duplicate pairs with matching prompt passages. Added the two Japanese image-guided instructions as reported by the author. Egg linked to A01 by description; wall file linkage left unassigned rather than inferred from appearance. Recorded the full astronaut text as a reconstruction supplied now, not verified historical input. Added all eight English ElevenLabs prompt records, their purposes/requested durations/current project cue uses, the earlier damaged-ship ambience iteration, and the explicit jet revision/MP3 mismatch caveat. The pasted summaries are not treated as direct tool history or as authoritative instructions about course grading. No image/audio/model, private attachment path, game source or Windows build is uploaded; original Unity project/history remains unchanged.
