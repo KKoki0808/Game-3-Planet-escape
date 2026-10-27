@@ -8,8 +8,21 @@ Current game specifications: [README](README.md). Detailed implementation eviden
 
 ## Contents
 
+- [Analytical Reflection](#analytical-reflection)
 - [Planet Escape development history](#planet-escape-development-history)
 - [Tripo and ElevenLabs asset-generation prompts](#tripo-and-elevenlabs-asset-generation-prompts)
+
+## Analytical Reflection
+
+At first, I started developing a game called *Space Salvage Run*. However, even though I used AI to build the game, I couldn't make it as interesting as I expected. The gameplay was too simple, and I struggled to come up with ideas to improve it. Eventually, I decided to change the concept completely and started creating *Planet Escape* from scratch.
+
+Through this experience, I realized that having powerful AI tools does not automatically mean we can create an interesting game. AI can generate code and build systems quickly, but it cannot decide what kind of experience I want players to have. I learned that my own creativity and ideas are just as important as the technology itself.
+
+Another challenge was creating three different areas with different gameplay styles: parkour, stealth, and combat. Each area needed its own mechanics, level design, and adjustments. Because of this, I had to write many more prompts than I expected. Sometimes the AI created something that looked good but was not fun to play, so I needed to test it and give more specific instructions.
+
+Compared to Game 2, working with Unity in Game 3 was more complicated because I had to consider 3D environments, camera movement, character controls, and imported assets.
+
+Overall, I learned that AI is a powerful tool for turning ideas into reality, but human creativity, judgment, and continuous improvement are essential for making a good game.
 
 ## Planet Escape development history
 
